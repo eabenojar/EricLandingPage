@@ -9,17 +9,28 @@
  <link href="https://fonts.googleapis.com/css?family=Crete+Round|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="/css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
 
 </head>
 <body>
 
 <div class="container-fluid row1">
   <div class="maincenter">
-    <div class="row">
+    <div class="container">
+      <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" id="about">About</a></li>
+          <li><a href="#" id="projects">Projects</a></li>
+          <li><a href="#" id="contact">Contact</a></li>
+        </ul>
+
+        </nav>
     </div>
-    <div class="row">
-      </div>
-    </div>
+          <div class="row">
+            </div>
+          </div>
       <div class="row row2">
 
       <div class="col-md-offset-3 col-md-6">
@@ -42,21 +53,21 @@
               <div class="row3-block"><i class="fa fa-diamond yellow"></i>
                 <span class="glyphicon glyphicon-star"></span>
                 <h4 class="title-slate">Ideas</h4>
-                <p class="summary">I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
+                <p class="summary">I collaborate with clients and peers to transform ideas into real applications. This is where the user experiences begins.</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="row3-block"><i class="fa fa-magic yellow"></i>
                 <span class="glyphicon glyphicon-pencil"></span>
                 <h4 class="title-slate">UX/UI</h4>
-                <p class="summary">I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
+                <p class="summary">I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I am simple design that creates clean and elegant interfaces.</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="row3-block"><i class="fa fa-code yellow"></i>
                 <span class="glyphicon glyphicon-phone"></span>
                 <h4 class="title-slate">Front-End</h4>
-                <p class="summary">I design in the browser with HTML(5), CSS(3) and JavaScript. I love coding things from scratch, but I can work with front-end frameworks such as Bootstrap and ReactJS</p>
+                <p class="summary">I design in the browser with HTML(5), CSS(3) and JavaScript. I love coding from scratch. I can work with front-end frameworks such as Bootstrap and ReactJS</p>
               </div>
             </div>
             <div class="col-md-3">
@@ -150,7 +161,8 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="row4-block">
-                  <p class="conclusion-slate">I am freelancing. <br> Wanna talk about a project or hire me for a freelance?</p>
+                  <p class="final-slate">My Contact</p>
+                  <p class="conclusion-slate">I am freelancing. <br> Want to hire me for a project? <br> Contact me at </p>
                   </div>
                 </div>
                 </div>
@@ -165,15 +177,32 @@
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
 
+  </script>
   <!-- Your script file -->
   <script type="text/javascript" src="./js/script.js"></script>
   <!-- UnderscoreJS Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-
-  <!-- JavaScript files for Bootstrap -->
-  <!-- UNCOMMENT IF NEEDED -->
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+  <script>
+  $("#about").click(function() {
+    console.log('clickedddddd');
+    $('html, body').animate({
+    scrollTop: $(".row3").offset().top
+    }, 2000);
+    });
+  $("#projects").click(function() {
+      console.log('clickedddddd');
+      $('html, body').animate({
+      scrollTop: $(".row4-block").offset().top
+      }, 2000);
+      });
+  $("#contact").click(function() {
+          console.log('clickedddddd');
+          $('html, body').animate({
+          scrollTop: $(".row5").offset().top
+          }, 2000);
+          });
+  </script>
 </body>
 </html>

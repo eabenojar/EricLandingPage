@@ -1,11 +1,9 @@
 body{
-  background: url('../images/coffee.jpg') no-repeat center center fixed;
+  background: url('../images/art.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-
 }
 button{
 	width: 90%;
@@ -28,6 +26,31 @@ input{
 	margin-left: 20px;
 	border: transparent solid 1px;
   padding: 10px;
+}
+.navbar-inverse{
+  background-color: transparent;
+  border: none;
+}
+.navbar-right{
+  text-decoration: none;
+  font-weight: 800;
+  color: #000;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-shadow: 1px 1px darkgrey;
+}
+.active {
+    border-bottom: 4px solid #1BAC9C;
+}
+#about:hover{
+    color: #1BAC9C;
+}
+#projects:hover{
+    color: #1BAC9C;
+}
+#contact:hover{
+    color: #1BAC9C;
 }
 .navbar-default{
 	background-color: transparent;
@@ -81,9 +104,10 @@ button[name=loginbutton]{
 .mainmessage{
 	color: white;
 	font-weight: bold;
-	font-size: 3.5rem;
+	font-size: 4.5rem;
 	padding-left: 20px;
-  text-align: center
+  text-align: center;
+  text-shadow: 1px 1px darkgrey;
 }
 
 .submessage{
@@ -116,7 +140,7 @@ button[name=register], button[name=login]{
   width: 80%;
   margin: 0 auto;
   line-height: 1.8;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 .statement{
   margin-top: 10px;
@@ -133,6 +157,12 @@ button[name=register], button[name=login]{
 }
 .intro-slate{
   margin-top: 10rem;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 4.0rem;
+}
+.final-slate{
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
@@ -183,14 +213,15 @@ button[name=register], button[name=login]{
 
 }
 .row5{
-  height: 200px;
-  background-color: #364347;
+  height: 300px;
+  background-color: #FDCD3B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .conclusion-slate{
-  margin-top: 10rem;
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 2.0rem;
-  color: #C3C7C8;
 }
