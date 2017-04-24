@@ -10,7 +10,7 @@ var Email = models.Email;
 
 
 var app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 app.use(function(req,res,next){
   if(req.headers['x-forwarded-proto'] === 'http'){
@@ -70,6 +70,6 @@ app.post('/email', function(req,res){
 
 
 
-app.listen(4000, function(){
+app.listen(PORT, function(){
   console.log('Success, running on port 3000' +  PORT);
 });
