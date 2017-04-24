@@ -38,7 +38,6 @@ input{
   font-size: 18px;
   margin-right: 20px;
   margin-top: 20px;
-  text-shadow: 1px 1px darkgrey;
 }
 .active {
     border-bottom: 4px solid #1BAC9C;
@@ -107,7 +106,7 @@ button[name=loginbutton]{
 	font-size: 4.5rem;
 	padding-left: 20px;
   text-align: center;
-  text-shadow: 1px 1px darkgrey;
+
 }
 
 .submessage{
