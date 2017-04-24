@@ -10,8 +10,15 @@ var Email = models.Email;
 
 
 var app = express();
+const PORT = process.env.PORT || 3000;
 
-
+app.use(function(req,res,next){
+  if(req.headers['x-forwarded-proto'] === 'http'){
+    next();
+  } else {
+    res.redirect('http://' + req.hostname + req.url);
+  }
+});
 
 ////////View Engine
 app.set('view engine', 'hbs');
@@ -63,6 +70,6 @@ app.post('/email', function(req,res){
 
 
 
-app.listen(4000, function(){
-  console.log('Success, running on port 4000');
+app.listen(PORT, function(){
+  console.log('Success, running on port 3000' + PORT);
 });
