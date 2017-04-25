@@ -5,6 +5,10 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 button{
 	width: 90%;
 	height: 40px;
