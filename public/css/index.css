@@ -196,8 +196,11 @@ button[name=register], button[name=login]{
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-.ul{
-  width: 70%;
+.skills-block{
+  text-align: center;
+}
+.ul .skills{
+  width: 100%;
   margin: 0 auto;
 }
 .skills li {
@@ -208,7 +211,7 @@ button[name=register], button[name=login]{
     border-radius: 4px;
     font-size: 12px;
     background: #f04;
-    padding: 4px 9px;
+    padding: 5px;
 
 }
 .row5{
