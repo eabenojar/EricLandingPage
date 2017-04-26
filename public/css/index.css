@@ -1,5 +1,5 @@
 body{
-  background: url('../images/art.jpg') no-repeat center center fixed;
+  background: url('../images/eric1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -139,7 +139,16 @@ button[name=register], button[name=login]{
   text-align: justify;
   font-family: Montserrat, sans-serif;
   font-size: 1.5rem;
-  color: #93a4aa;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.8;
+  margin-bottom: 10rem;
+}
+.summary-apps{
+  text-align: justify;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5rem;
+  color: white;
   width: 80%;
   margin: 0 auto;
   line-height: 1.8;
@@ -148,6 +157,7 @@ button[name=register], button[name=login]{
 .statement{
   margin-top: 10px;
   margin-bottom: 5rem;
+  color: white;
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 2.5rem;
@@ -156,9 +166,24 @@ button[name=register], button[name=login]{
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
+  color: white;
+  font-size: 3.0rem;
+}
+.general-slate{
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
   font-size: 3.0rem;
 }
 .intro-slate{
+  margin-top: 10rem;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 4.0rem;
+  color: white;
+}
+.intro-slate-row1{
   margin-top: 10rem;
   text-align: center;
   font-family: Montserrat, sans-serif;
@@ -173,7 +198,7 @@ button[name=register], button[name=login]{
 }
 .row4{
   height: auto;
-  background-color: lightgrey
+  background-color: #3C5064
 }
 .glyphicon-phone {
        color: green;
@@ -220,7 +245,7 @@ button[name=register], button[name=login]{
 }
 .row5{
   height: 300px;
-  background-color: #FDCD3B;
+  background-color: #9AE4D5;
   display: flex;
   justify-content: center;
   align-items: center;
